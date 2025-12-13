@@ -127,3 +127,51 @@
   color: var(--secondary-blue) !important;
 }
 
+/* Group Members */
+.memberLogo {
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.memberLogo:hover {
+  transform: scale(1.05);
+}
+
+.logoPlaceholder {
+  background-color: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.memberLogo:hover .logoPlaceholder {
+  border-color: var(--primary-blue);
+  background-color: #f0f4f8;
+}
+
+.logoPlaceholder h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .logoPlaceholder {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .logoPlaceholder h4 {
+    font-size: 0.9rem;
+  }
+
+  .memberLogo {
+    min-height: 120px;
+  }
+}
+

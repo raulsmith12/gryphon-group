@@ -85,6 +85,21 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Call to Action Section */}
+        <section className="py-5" style={{ backgroundColor: 'var(--primary-blue)' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-12 text-center text-white">
+                <a href="#" className="text-decoration-none text-white">
+                  <p className="lead fs-4 mb-0">
+                    If you want to support these projects or others that may arrive later, please contact us. (Contact info coming soon)
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About the Team Section */}
         <section id="about" className="py-5 bg-light">
           <div className="container">
@@ -126,10 +141,111 @@ export default function Home() {
                       </a>
                     </h3>
                     <p className="text-muted mb-3">
-                      <small>Founder and Owner<br />The Gryphon Group LLC</small>
+                      <small>Founder and President<br />The Gryphon Group LLC</small>
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Group Members Section */}
+        <section id="group-members" className="py-5 bg-white">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 text-center mb-5">
+                <h2 className="display-4 fw-bold text-primary">Group Members</h2>
+                <p className="lead text-muted">
+                  Our trusted partners and affiliates
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-center align-items-center g-4">
+              {/* Sirius Realty */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://www.siriusrealtyllc.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">Sirius Realty LLC</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {/* The Carver Group */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://carverfinancialservices.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <Image 
+                      src="https://carverfinancialservices.com/wp-content/uploads/2020/05/cropped-Carver-Financial-Logo-Main-500px.png"
+                      alt="The Carver Group"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
+                  </div>
+                </a>
+              </div>
+              {/* Galactic Digital Studios */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://galacticdigitalstudios.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <Image 
+                      src="https://galacticdigitalstudios.com/wp-content/uploads/2025/04/gds-logo-bnw-1-300x100.png"
+                      alt="Galactic Digital Studios"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
+                  </div>
+                </a>
+              </div>
+              {/* First Choice Drywall */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://1stchoicedrywall.net/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">First Choice Drywall</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {/* The Wynn Group */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://www.wynnchurch.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">Wynn Group</h4>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

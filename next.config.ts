@@ -10,6 +10,22 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'lp-cms-production.imgix.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'carverfinancialservices.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'galacticdigitalstudios.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.wynnchurch.com',
+      },
     ],
   },
 };
