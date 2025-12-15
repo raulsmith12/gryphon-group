@@ -122,10 +122,6 @@
   display: block;
 }
 
-.teamCard h3 a:hover {
-  text-decoration: underline !important;
-  color: var(--secondary-blue) !important;
-}
 
 /* Group Members */
 .memberLogo {

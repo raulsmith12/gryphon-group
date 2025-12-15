@@ -92,7 +92,7 @@ export default function Home() {
               <div className="col-12 text-center text-white">
                 <a href="#" className="text-decoration-none text-white">
                   <p className="lead fs-4 mb-0">
-                    If you want to support these projects or others that may arrive later, please contact us. (Contact info coming soon)
+                    If you want to support these projects or others that will arrive later, please contact: (Contact info coming soon)
                   </p>
                 </a>
               </div>
@@ -116,29 +116,15 @@ export default function Home() {
               <div className="col-lg-4 col-md-6">
                 <div className={`card shadow-sm h-100 ${styles.teamCard}`}>
                   <div className="card-body p-4 text-center">
-                    <a 
-                      href="https://www.linkedin.com/in/david-green-06707a180/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-decoration-none"
-                    >
-                      <div className={styles.teamImageWrapper}>
-                        <img 
-                          src="https://media.licdn.com/dms/image/v2/D4E03AQHHx9tHxBuvrA/profile-displayphoto-shrink_800_800/B4EZaSBUN9HIAg-/0/1746206541132?e=1767225600&v=beta&t=sIfOXIPUzKMtcv45T4eqSKUrGbT7gTaxVmRPc18ubBo" 
-                          alt="David Green" 
-                          className={styles.teamImage}
-                        />
-                      </div>
-                    </a>
-                    <h3 className="card-title mt-4 mb-2">
-                      <a 
-                        href="https://www.linkedin.com/in/david-green-06707a180/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-decoration-none text-primary"
-                      >
-                        David Green
-                      </a>
+                    <div className={styles.teamImageWrapper}>
+                      <img 
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHHx9tHxBuvrA/profile-displayphoto-shrink_800_800/B4EZaSBUN9HIAg-/0/1746206541132?e=1767225600&v=beta&t=sIfOXIPUzKMtcv45T4eqSKUrGbT7gTaxVmRPc18ubBo" 
+                        alt="David Green" 
+                        className={styles.teamImage}
+                      />
+                    </div>
+                    <h3 className="card-title mt-4 mb-2 text-primary">
+                      David Green
                     </h3>
                     <p className="text-muted mb-3">
                       <small>Founder and President<br />The Gryphon Group LLC</small>
@@ -165,35 +151,35 @@ export default function Home() {
               {/* Sirius Realty */}
               <div className="col-6 col-md-4 col-lg-2 text-center">
                 <a 
-                  href="https://www.siriusrealtyllc.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-decoration-none"
-                >
-                  <div className={styles.memberLogo}>
-                    <div className={styles.logoPlaceholder}>
-                      <h4 className="text-primary mb-0">Sirius Realty LLC</h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              {/* The Carver Group */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
-                <a 
-                  href="https://carverfinancialservices.com/" 
+                  href="https://siriusrealtyservices.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-decoration-none"
                 >
                   <div className={styles.memberLogo}>
                     <Image 
-                      src="https://carverfinancialservices.com/wp-content/uploads/2020/05/cropped-Carver-Financial-Logo-Main-500px.png"
-                      alt="The Carver Group"
+                      src="https://siriusrealtyservices.com/wp-content/themes/siriusrealty/inc/img/logo.png"
+                      alt="Sirius Realty LLC"
                       width={200}
                       height={100}
                       className="img-fluid"
                       style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
                     />
+                  </div>
+                </a>
+              </div>
+              {/* The Carver Group */}
+              <div className="col-6 col-md-4 col-lg-2 text-center">
+                <a 
+                  href="https://www.facebook.com/share/1FoMAiKTH3/?mibextid=wwXIfr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">The Carver Group</h4>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -220,7 +206,7 @@ export default function Home() {
               {/* First Choice Drywall */}
               <div className="col-6 col-md-4 col-lg-2 text-center">
                 <a 
-                  href="https://1stchoicedrywall.net/" 
+                  href="https://www.facebook.com/share/1H9MDkHGTh/?mibextid=wwXIfr" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-decoration-none"
@@ -235,15 +221,20 @@ export default function Home() {
               {/* The Wynn Group */}
               <div className="col-6 col-md-4 col-lg-2 text-center">
                 <a 
-                  href="https://www.wynnchurch.com/" 
+                  href="https://twgcommercial.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-decoration-none"
                 >
                   <div className={styles.memberLogo}>
-                    <div className={styles.logoPlaceholder}>
-                      <h4 className="text-primary mb-0">Wynn Group</h4>
-                    </div>
+                    <Image 
+                      src="https://twgcommercial.com/wp-content/uploads/2022/05/logo-slant-1.png"
+                      alt="The Wynn Group"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
                   </div>
                 </a>
               </div>
