@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Carousel from '../components/Carousel';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -147,9 +148,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="row justify-content-center align-items-center g-4">
+            <Carousel autoPlay={true} autoPlayInterval={3000} wrapAround={true}>
               {/* Sirius Realty */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
+              <div className="text-center">
                 <a 
                   href="https://siriusrealtyservices.com/" 
                   target="_blank" 
@@ -169,7 +170,7 @@ export default function Home() {
                 </a>
               </div>
               {/* The Carver Group */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
+              <div className="text-center">
                 <a 
                   href="https://www.facebook.com/share/1FoMAiKTH3/?mibextid=wwXIfr" 
                   target="_blank" 
@@ -184,7 +185,7 @@ export default function Home() {
                 </a>
               </div>
               {/* Galactic Digital Studios */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
+              <div className="text-center">
                 <a 
                   href="https://galacticdigitalstudios.com/" 
                   target="_blank" 
@@ -204,7 +205,7 @@ export default function Home() {
                 </a>
               </div>
               {/* First Choice Drywall */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
+              <div className="text-center">
                 <a 
                   href="https://www.facebook.com/share/1H9MDkHGTh/?mibextid=wwXIfr" 
                   target="_blank" 
@@ -219,7 +220,7 @@ export default function Home() {
                 </a>
               </div>
               {/* The Wynn Group */}
-              <div className="col-6 col-md-4 col-lg-2 text-center">
+              <div className="text-center">
                 <a 
                   href="https://twgcommercial.com/" 
                   target="_blank" 
@@ -238,7 +239,57 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-            </div>
+              {/* Trowbridge Nieh LLP */}
+              <div className="text-center">
+                <a 
+                  href="https://tnllp.com/attorney/gene-trowbridge/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <Image 
+                      src="https://tnllp.com/wp-content/uploads/2023/02/TROWBRIDGE_NIEH_LLP.png"
+                      alt="Trowbridge Nieh LLP"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
+                  </div>
+                </a>
+              </div>
+              {/* Moment Private Wealth */}
+              <div className="text-center">
+                <a 
+                  href="https://www.momentprivatewealth.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">Moment Private Wealth</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {/* Montgomery and Company, CPAs */}
+              <div className="text-center">
+                <a 
+                  href="https://montgomeryandco.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">Montgomery & Company, CPAs</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </Carousel>
           </div>
         </section>
       </main>
