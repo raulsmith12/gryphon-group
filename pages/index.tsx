@@ -93,7 +93,7 @@ export default function Home() {
               <div className="col-12 text-center text-white">
                 <a href="#" className="text-decoration-none text-white">
                   <p className="lead fs-4 mb-0">
-                    If you want to support these projects or others that will arrive later, please contact: (Contact info coming soon)
+                    If you want to support these projects or others that will arrive later, please contact: <a href="mailto:thegryphon0412@gmail.com">thegryphon0412@gmail.com</a>
                   </p>
                 </a>
               </div>
