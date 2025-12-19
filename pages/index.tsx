@@ -91,9 +91,9 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-12 text-center text-white">
-                <a href="#" className="text-decoration-none text-white">
+                <a href="mailto:thegryphon0412@gmail.com" className="text-decoration-none text-white">
                   <p className="lead fs-4 mb-0">
-                    If you want to support these projects or others that will arrive later, please contact: <a href="mailto:thegryphon0412@gmail.com">thegryphon0412@gmail.com</a>
+                    If you want to support these projects or others that will arrive later, please contact: thegryphon0412@gmail.com
                   </p>
                 </a>
               </div>
@@ -118,9 +118,11 @@ export default function Home() {
                 <div className={`card shadow-sm h-100 ${styles.teamCard}`}>
                   <div className="card-body p-4 text-center">
                     <div className={styles.teamImageWrapper}>
-                      <img 
+                      <Image 
                         src="https://media.licdn.com/dms/image/v2/D4E03AQHHx9tHxBuvrA/profile-displayphoto-shrink_800_800/B4EZaSBUN9HIAg-/0/1746206541132?e=1767225600&v=beta&t=sIfOXIPUzKMtcv45T4eqSKUrGbT7gTaxVmRPc18ubBo" 
                         alt="David Green" 
+                        width={800}
+                        height={800}
                         className={styles.teamImage}
                       />
                     </div>
@@ -239,6 +241,21 @@ export default function Home() {
                   </div>
                 </a>
               </div>
+              {/* Blackstream Commercial Real Estate */}
+              <div className="text-center">
+                <a 
+                  href="https://www.blackstreamcre.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo}>
+                    <div className={styles.logoPlaceholder}>
+                      <h4 className="text-primary mb-0">Blackstream Commercial Real Estate</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
               {/* Trowbridge Nieh LLP */}
               <div className="text-center">
                 <a 
@@ -282,10 +299,15 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-decoration-none"
                 >
-                  <div className={styles.memberLogo}>
-                    <div className={styles.logoPlaceholder}>
-                      <h4 className="text-primary mb-0">Montgomery & Company, CPAs</h4>
-                    </div>
+                  <div className={styles.memberLogo} style={{ backgroundColor: '#c1c3c7' }}>
+                    <Image 
+                      src="https://montgomeryandco.com/wp-content/uploads/2019/09/MCO-Logo-White-3.svg"
+                      alt="Montgomery & Company, CPAs"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
                   </div>
                 </a>
               </div>

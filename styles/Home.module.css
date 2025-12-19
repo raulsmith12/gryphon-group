@@ -132,6 +132,13 @@
   align-items: center;
   justify-content: center;
   min-height: 150px;
+  max-height: 150px;
+}
+
+.memberLogo img {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
 }
 
 .memberLogo:hover {
