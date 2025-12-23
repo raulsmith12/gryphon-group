@@ -30,6 +30,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'media.licdn.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'siriusrealtyservices.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tnllp.com',
+      },
     ],
   },
 };

@@ -58,6 +58,15 @@ export default function Home() {
               {/* South Carolina Project */}
               <div className="col-lg-6">
                 <div className={`card shadow-sm h-100 ${styles.projectCard} ${styles.projectSouthCarolina}`}>
+                  <div className={styles.projectImageWrapper}>
+                    <Image 
+                      src="https://lp-cms-production.imgix.net/2023-07/iStock-919005828.jpg?w=1920&h=640&fit=crop&crop=faces%2Cedges&auto=format&q=75" 
+                      alt="South Carolina Project" 
+                      width={800}
+                      height={400}
+                      className={styles.projectImage}
+                    />
+                  </div>
                   <div className={styles.projectHeader}>
                     <h3>South Carolina</h3>
                   </div>
@@ -72,6 +81,15 @@ export default function Home() {
               {/* Washington Project */}
               <div className="col-lg-6">
                 <div className={`card shadow-sm h-100 ${styles.projectCard} ${styles.projectWashington}`}>
+                  <div className={styles.projectImageWrapper}>
+                    <Image 
+                      src="https://www.windermerepugetsound.com/imager/amazons3/gig-harbor/733483/GH-16-of-28_2023-07-21-174112_nvql_6a5acb44b2d188e59e1f48dccc1f41ec.jpg" 
+                      alt="Gig Harbor, Washington Project" 
+                      width={800}
+                      height={400}
+                      className={styles.projectImage}
+                    />
+                  </div>
                   <div className={styles.projectHeader}>
                     <h3>Washington</h3>
                   </div>
@@ -87,7 +105,7 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-5" style={{ backgroundColor: 'var(--primary-blue)' }}>
+        {/* <section className="py-5" style={{ backgroundColor: 'var(--primary-blue)' }}>
           <div className="container">
             <div className="row">
               <div className="col-12 text-center text-white">
@@ -99,7 +117,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* About the Team Section */}
         <section id="about" className="py-5 bg-light">
@@ -222,7 +240,7 @@ export default function Home() {
                 </a>
               </div>
               {/* The Wynn Group */}
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a 
                   href="https://twgcommercial.com/" 
                   target="_blank" 
@@ -240,9 +258,9 @@ export default function Home() {
                     />
                   </div>
                 </a>
-              </div>
+              </div> */}
               {/* Blackstream Commercial Real Estate */}
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a 
                   href="https://www.blackstreamcre.com/" 
                   target="_blank" 
@@ -255,7 +273,7 @@ export default function Home() {
                     </div>
                   </div>
                 </a>
-              </div>
+              </div> */}
               {/* Trowbridge Nieh LLP */}
               <div className="text-center">
                 <a 
@@ -277,7 +295,7 @@ export default function Home() {
                 </a>
               </div>
               {/* Moment Private Wealth */}
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a 
                   href="https://www.momentprivatewealth.com/" 
                   target="_blank" 
@@ -290,9 +308,9 @@ export default function Home() {
                     </div>
                   </div>
                 </a>
-              </div>
+              </div> */}
               {/* Montgomery and Company, CPAs */}
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a 
                   href="https://montgomeryandco.com/" 
                   target="_blank" 
@@ -310,7 +328,7 @@ export default function Home() {
                     />
                   </div>
                 </a>
-              </div>
+              </div> */}
             </Carousel>
           </div>
         </section>
