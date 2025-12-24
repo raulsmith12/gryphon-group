@@ -72,7 +72,7 @@ export default function Home() {
                   </div>
                   <div className="card-body p-4">
                     <p className="card-text">
-                      This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. Short term, it involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout, which will immediately increase foot traffic. Long term, leases will be re-negotiated to expand the kiosk into a full coffee roastery and pastry bakery, which the building is already zoned for, thus maintaining the stabilized status of the building for many years to come.
+                      This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. Short term, it involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout. The building is already zoned for this, thus maintaining the stabilized status of the building for many years to come.
                     </p>
                   </div>
                 </div>
