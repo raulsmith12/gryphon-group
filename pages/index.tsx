@@ -1,9 +1,24 @@
+'use client';
+
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Carousel from '../components/Carousel';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const [flippedCards, setFlippedCards] = useState<{ [key: string]: boolean }>({
+    southCarolina: false,
+    washington: false,
+  });
+
+  const toggleCard = (cardId: string) => {
+    setFlippedCards(prev => ({
+      ...prev,
+      [cardId]: !prev[cardId]
+    }));
+  };
+
   return (
     <>
       <Head>
@@ -57,46 +72,104 @@ export default function Home() {
             <div className="row g-4">
               {/* South Carolina Project */}
               <div className="col-lg-6">
-                <div className={`card shadow-sm h-100 ${styles.projectCard} ${styles.projectSouthCarolina}`}>
-                  <div className={styles.projectImageWrapper}>
-                    <Image 
-                      src="https://lp-cms-production.imgix.net/2023-07/iStock-919005828.jpg?w=1920&h=640&fit=crop&crop=faces%2Cedges&auto=format&q=75" 
-                      alt="South Carolina Project" 
-                      width={800}
-                      height={400}
-                      className={styles.projectImage}
-                    />
-                  </div>
-                  <div className={styles.projectHeader}>
-                    <h3>South Carolina</h3>
-                  </div>
-                  <div className="card-body p-4">
-                    <p className="card-text">
-                      This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. It involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout. The building is already zoned for this, thus maintaining the stabilized status of the building for many years to come.
-                    </p>
+                <div className={`${styles.projectCardContainer} ${flippedCards.southCarolina ? styles.flipped : ''}`}>
+                  <div className={`card shadow-sm ${styles.projectCard} ${styles.projectSouthCarolina}`}>
+                    {/* Front Side */}
+                    <div className={styles.projectCardFront}>
+                      <div className={styles.projectImageWrapper}>
+                        <Image 
+                          src="https://lp-cms-production.imgix.net/2023-07/iStock-919005828.jpg?w=1920&h=640&fit=crop&crop=faces%2Cedges&auto=format&q=75" 
+                          alt="South Carolina Project" 
+                          width={800}
+                          height={400}
+                          className={styles.projectImage}
+                        />
+                      </div>
+                      <div className={styles.projectHeader}>
+                        <h3>South Carolina</h3>
+                      </div>
+                      <div className="card-body p-4">
+                        <p className="card-text">
+                          This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. It involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout. The building is already zoned for this, thus maintaining the stabilized status of the building for many years to come.
+                        </p>
+                      </div>
+                      <div className={`${styles.flipButtonContainer} p-3`}>
+                        <button 
+                          className={`btn btn-outline-primary ${styles.flipButton}`}
+                          onClick={() => toggleCard('southCarolina')}
+                        >
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                    {/* Back Side */}
+                    <div className={styles.projectCardBack}>
+                      <div className={`card-body p-4 d-flex align-items-center justify-content-center ${styles.projectCardBackContent}`}>
+                        <div className="text-center">
+                          <h4 className="mb-3 text-primary">Project Info TBA</h4>
+                        </div>
+                      </div>
+                      <div className={`${styles.flipButtonContainer} p-3`}>
+                        <button 
+                          className={`btn btn-outline-primary ${styles.flipButton}`}
+                          onClick={() => toggleCard('southCarolina')}
+                        >
+                          Back to Overview
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Washington Project */}
               <div className="col-lg-6">
-                <div className={`card shadow-sm h-100 ${styles.projectCard} ${styles.projectWashington}`}>
-                  <div className={styles.projectImageWrapper}>
-                    <Image 
-                      src="https://www.windermerepugetsound.com/imager/amazons3/gig-harbor/733483/GH-16-of-28_2023-07-21-174112_nvql_6a5acb44b2d188e59e1f48dccc1f41ec.jpg" 
-                      alt="Gig Harbor, Washington Project" 
-                      width={800}
-                      height={400}
-                      className={styles.projectImage}
-                    />
-                  </div>
-                  <div className={styles.projectHeader}>
-                    <h3>Washington</h3>
-                  </div>
-                  <div className="card-body p-4">
-                    <p className="card-text">
-                      This project is based in the scenic Puget Sound region of Washington state, where our founder is originally from. Short term, it involves the purchase of both residential and commercial properties to facilitate the development of a prototype competitive ballroom dance training center, which will be leased to small or medium sized schools who are in need of state of the art facilities to train their students. It will also be leased to independent instructors and competition couples in need of dedicated training space. Long term, the other two thirds of the property will be converted into business space for lease to high end, consumer based developers for business placement, and additional foot traffic.
-                    </p>
+                <div className={`${styles.projectCardContainer} ${flippedCards.washington ? styles.flipped : ''}`}>
+                  <div className={`card shadow-sm ${styles.projectCard} ${styles.projectWashington}`}>
+                    {/* Front Side */}
+                    <div className={styles.projectCardFront}>
+                      <div className={styles.projectImageWrapper}>
+                        <Image 
+                          src="https://www.windermerepugetsound.com/imager/amazons3/gig-harbor/733483/GH-16-of-28_2023-07-21-174112_nvql_6a5acb44b2d188e59e1f48dccc1f41ec.jpg" 
+                          alt="Gig Harbor, Washington Project" 
+                          width={800}
+                          height={400}
+                          className={styles.projectImage}
+                        />
+                      </div>
+                      <div className={styles.projectHeader}>
+                        <h3>Washington</h3>
+                      </div>
+                      <div className="card-body p-4">
+                        <p className="card-text">
+                          This project is based in the scenic Puget Sound region of Washington state, where our founder is originally from. Short term, it involves the purchase of both residential and commercial properties to facilitate the development of a prototype competitive ballroom dance training center, which will be leased to small or medium sized schools who are in need of state of the art facilities to train their students. It will also be leased to independent instructors and competition couples in need of dedicated training space. Long term, the other two thirds of the property will be converted into business space for lease to high end, consumer based developers for business placement, and additional foot traffic.
+                        </p>
+                      </div>
+                      <div className={`${styles.flipButtonContainer} p-3`}>
+                        <button 
+                          className={`btn btn-outline-primary ${styles.flipButton}`}
+                          onClick={() => toggleCard('washington')}
+                        >
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                    {/* Back Side */}
+                    <div className={styles.projectCardBack}>
+                      <div className={`card-body p-4 d-flex align-items-center justify-content-center ${styles.projectCardBackContent}`}>
+                        <div className="text-center">
+                          <h4 className="mb-3 text-primary">Project Info TBA</h4>
+                        </div>
+                      </div>
+                      <div className={`${styles.flipButtonContainer} p-3`}>
+                        <button 
+                          className={`btn btn-outline-primary ${styles.flipButton}`}
+                          onClick={() => toggleCard('washington')}
+                        >
+                          Back to Overview
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -336,4 +409,3 @@ export default function Home() {
     </>
   );
 }
-
