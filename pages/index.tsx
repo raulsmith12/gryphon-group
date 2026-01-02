@@ -1,20 +1,30 @@
 'use client';
 
-import Head from 'next/head';
 import Image from 'next/image';
+import SEO from '../components/SEO';
 import Carousel from '../components/Carousel';
+import { getOrganizationStructuredData, getWebSiteStructuredData, getPersonStructuredData } from '../lib/structuredData';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://thegryphongroup.com';
+  
+  // Combine structured data
+  const structuredData = [
+    getOrganizationStructuredData(),
+    getWebSiteStructuredData(),
+    getPersonStructuredData('David Green', 'Founder and President', '/img/1746206541132.jpg'),
+  ];
 
   return (
     <>
-      <Head>
-        <title>The Gryphon Group LLC</title>
-        <meta name="description" content="The Gryphon Group LLC - Professional Services" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="The Gryphon Group LLC - Navigating Risk with Nobility"
+        description="The Gryphon Group LLC provides professional commercial real estate services. Explore our projects in South Carolina and Washington, featuring stabilized commercial buildings and ballroom dance training centers. Learn about our trusted team and partners."
+        canonical={siteUrl}
+        ogImage="/img/The-Gryphon-Group-LLC-White.png"
+        structuredData={structuredData}
+      />
 
       <main>
         {/* Hero Section */}
@@ -23,15 +33,15 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-8 mx-auto text-center text-white">
                 <div className={`mb-4 ${styles.heroTitle}`}>
-                  <Image 
-                    src="/img/The-Gryphon-Group-LLC-White.png" 
-                    alt="The Gryphon Group LLC" 
-                    width={800}
-                    height={300}
-                    className="img-fluid"
-                    style={{ maxWidth: '100%', height: 'auto' }}
-                    priority
-                  />
+                    <Image 
+                      src="/img/The-Gryphon-Group-LLC-White.png" 
+                      alt="The Gryphon Group LLC - Professional Commercial Real Estate Services" 
+                      width={800}
+                      height={300}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                      priority
+                    />
                 </div>
                 <p className="lead fs-4 mb-4">
                   Navigating Risk with Nobility
@@ -64,7 +74,7 @@ export default function Home() {
                   <div className={styles.projectImageWrapper}>
                     <Image 
                       src="https://lp-cms-production.imgix.net/2023-07/iStock-919005828.jpg?w=1920&h=640&fit=crop&crop=faces%2Cedges&auto=format&q=75" 
-                      alt="South Carolina Project" 
+                      alt="Commercial building in Upstate South Carolina for The Gryphon Group LLC project" 
                       width={800}
                       height={400}
                       className={styles.projectImage}
@@ -88,7 +98,7 @@ export default function Home() {
                   <div className={styles.projectImageWrapper}>
                     <Image 
                       src="https://www.windermerepugetsound.com/imager/amazons3/gig-harbor/733483/GH-16-of-28_2023-07-21-174112_nvql_6a5acb44b2d188e59e1f48dccc1f41ec.jpg" 
-                      alt="Gig Harbor, Washington Project" 
+                      alt="Puget Sound region property in Gig Harbor, Washington for ballroom dance training center development" 
                       width={800}
                       height={400}
                       className={styles.projectImage}
@@ -140,13 +150,13 @@ export default function Home() {
                 <div className={`card shadow-sm h-100 ${styles.teamCard}`}>
                   <div className="card-body p-4 text-center">
                     <div className={styles.teamImageWrapper}>
-                      <Image 
-                        src="/img/1746206541132.jpg" 
-                        alt="David Green" 
-                        width={800}
-                        height={800}
-                        className={styles.teamImage}
-                      />
+                    <Image 
+                      src="/img/1746206541132.jpg" 
+                      alt="David Green, Founder and President of The Gryphon Group LLC" 
+                      width={800}
+                      height={800}
+                      className={styles.teamImage}
+                    />
                     </div>
                     <h3 className="card-title mt-4 mb-2 text-primary">
                       David Green
