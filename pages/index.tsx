@@ -36,7 +36,7 @@ export default function Home() {
                 <p className="lead fs-4 mb-4">
                   Navigating Risk with Nobility
                 </p>
-                <div className="mt-5">
+                <div className="mt-1 mb-4">
                   <a href="#projects" className="btn btn-primary btn-lg me-3">
                     Our Projects
                   </a>
@@ -75,7 +75,8 @@ export default function Home() {
                   </div>
                   <div className="card-body p-4">
                     <p className="card-text">
-                      This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. It involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout. The building is already zoned for this, thus maintaining the stabilized status of the building for many years to come.
+                      This project is based in the Upstate region of South Carolina, in one of the fastest growing cities in the country. It involves the purchase of a stabilized commercial building with the intent of supporting the current lease holders by adding a professional European coffee shop and pastry bakery to the layout. The building is already zoned for this, thus maintaining the stabilized status of the building for many years to come.<br /><br />
+                      This is the cornerstone of our company&rsquo;s portfolio with additional purchases and projects to follow.
                     </p>
                   </div>
                 </div>
@@ -277,26 +278,6 @@ export default function Home() {
                   </div>
                 </a>
               </div> */}
-              {/* Trowbridge Nieh LLP */}
-              <div className="text-center">
-                <a 
-                  href="https://tnllp.com/attorney/gene-trowbridge/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-decoration-none"
-                >
-                  <div className={styles.memberLogo}>
-                    <Image 
-                      src="https://tnllp.com/wp-content/uploads/2023/02/TROWBRIDGE_NIEH_LLP.png"
-                      alt="Trowbridge Nieh LLP"
-                      width={200}
-                      height={100}
-                      className="img-fluid"
-                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
-                    />
-                  </div>
-                </a>
-              </div>
               {/* Moment Private Wealth */}
               {/* <div className="text-center">
                 <a 
