@@ -288,21 +288,6 @@ export default function Home() {
                   </div>
                 </a>
               </div> */}
-              {/* Moment Private Wealth */}
-              {/* <div className="text-center">
-                <a 
-                  href="https://www.momentprivatewealth.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-decoration-none"
-                >
-                  <div className={styles.memberLogo}>
-                    <div className={styles.logoPlaceholder}>
-                      <h4 className="text-primary mb-0">Moment Private Wealth</h4>
-                    </div>
-                  </div>
-                </a>
-              </div> */}
               {/* Montgomery and Company, CPAs */}
               <div className="text-center">
                 <a 
@@ -326,6 +311,30 @@ export default function Home() {
             </Carousel>
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="py-4 bg-dark text-white text-center">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p className="mb-2">
+                  &copy; {new Date().getFullYear()} The Gryphon Group LLC. All rights reserved.
+                </p>
+                <p className="mb-0">
+                  Website created by{' '}
+                  <a 
+                    href="https://galacticdigitalstudios.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-white text-decoration-underline"
+                  >
+                    Galactic Digital Studios
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );
