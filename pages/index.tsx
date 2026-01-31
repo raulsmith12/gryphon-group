@@ -254,7 +254,7 @@ export default function Home() {
                 </a>
               </div>
               {/* The Wynn Group */}
-              {/* <div className="text-center">
+              <div className="text-center">
                 <a 
                   href="https://twgcommercial.com/" 
                   target="_blank" 
@@ -272,7 +272,7 @@ export default function Home() {
                     />
                   </div>
                 </a>
-              </div> */}
+              </div>
               {/* Blackstream Commercial Real Estate */}
               {/* <div className="text-center">
                 <a 
