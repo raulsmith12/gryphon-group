@@ -254,7 +254,7 @@ export default function Home() {
                 </a>
               </div>
               {/* The Wynn Group */}
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a 
                   href="https://twgcommercial.com/" 
                   target="_blank" 
@@ -272,7 +272,7 @@ export default function Home() {
                     />
                   </div>
                 </a>
-              </div>
+              </div> */}
               {/* Blackstream Commercial Real Estate */}
               {/* <div className="text-center">
                 <a 
@@ -308,6 +308,46 @@ export default function Home() {
                   </div>
                 </a>
               </div>
+              {/* Elite Management Services */}
+              <div className="text-center">
+                <a 
+                  href="https://www.mcelitemanagement.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo} style={{ backgroundColor: '#e6e6e6' }}>
+                    <Image 
+                      src="https://static.wixstatic.com/media/f91818_6822f7ad568241b9beb09e14d0b58860~mv2.png/v1/fill/w_464,h_124,al_c,lg_1,q_85,enc_avif,quality_auto/image-1.png"
+                      alt="Elite Management Services"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
+                  </div>
+                </a>
+              </div>
+              {/* Sarah Gibson */}
+              {/* <div className="text-center">
+                <a 
+                  href="https://sarahgibson.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className={styles.memberLogo} style={{ backgroundColor: '#e6e6e6' }}>
+                    <Image 
+                      src="https://media.agentaprd.com/sites/998/sara-gibson-full-logo-light.svg"
+                      alt="Sarah Gibson"
+                      width={200}
+                      height={100}
+                      className="img-fluid"
+                      style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                    />
+                  </div>
+                </a>
+              </div> */}
             </Carousel>
           </div>
         </section>
